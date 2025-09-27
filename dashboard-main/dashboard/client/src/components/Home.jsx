@@ -66,7 +66,7 @@ function Home() {
   // Fetch AI suggestions from local endpoint
   const fetchAISuggestions = async () => {
     try {
-      const res = await fetch('http://127.0.0.1:8000/predict1');
+      const res = await fetch('https://ml-1ml3.onrender.com/predict1');
       const data = await res.json();
 
       const suggestions = data.map((item, idx) => ({
@@ -239,3 +239,4 @@ function Home() {
 }
 
 export default Home;
+
