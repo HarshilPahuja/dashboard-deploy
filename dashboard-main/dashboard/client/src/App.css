@@ -1,0 +1,190 @@
+/* === General Dashboard === */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f8fc;
+}
+
+/* === Navbar === */
+.main-navbar {
+  background-color: #1f3c88;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  height: 60px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar-logo {
+  height: 40px;
+  width: auto;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-logo {
+  height: 40px;
+  width: auto;
+}
+
+/* === Main Content === */
+.dashboard-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.dashboard-sidebar {
+  width: 300px;
+  background-color: #fff;
+  border-right: 1px solid #e0e0e0;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.dashboard-sidebar-right {
+  border-left: 1px solid #e0e0e0;
+}
+
+/* Map area */
+.dashboard-map {
+  flex: 1;
+  position: relative;
+}
+
+/* React-Leaflet Map */
+.map-container {
+  height: 100%;
+  width: 100%;
+}
+
+/* AI Suggestions */
+.ai-suggestions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ai-suggestions h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  color: #1f3c88;
+}
+
+.ai-suggestions ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ai-suggestions li {
+  margin-bottom: 12px;
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.severity.high {
+  color: #d32f2f;
+  font-weight: bold;
+}
+.severity.medium {
+  color: #ed6c02;
+  font-weight: bold;
+}
+.severity.low {
+  color: #388e3c;
+  font-weight: bold;
+}
+
+.ai-buttons {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+}
+
+.ai-buttons button {
+  padding: 5px 10px;
+  font-size: 0.85rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ai-buttons button:first-child {
+  background-color: #4caf50;
+  color: #fff;
+}
+.ai-buttons button:last-child {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.fetch-ai-btn {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 12px;
+  background-color: #1f3c88;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.fetch-ai-btn:hover {
+  background-color: #25489c;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* SOS list */
+.sos-list h2 {
+  color: #d32f2f;
+  margin-bottom: 10px;
+}
+
+.sos-list li {
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+
+/* Add subtle hover for danger zones / map items */
